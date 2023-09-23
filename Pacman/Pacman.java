@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 public class Pacman extends JFrame {
 
 	public Pacman() {
-		add(new Model());
+		add(new PacmanLogic());
 	}
 
 	public static void main(String[] args) {

@@ -9,7 +9,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class Model extends JPanel implements ActionListener {
+public class PacmanLogic extends JPanel implements ActionListener {
 
     private Dimension d;
     private final Font smallFont = new Font("Arial", Font.BOLD, 14);
@@ -58,7 +58,7 @@ public class Model extends JPanel implements ActionListener {
     private short[] screenData;
     private Timer timer;
 
-    public Model() {
+    public PacmanLogic() {
 
         loadImages();
         initVariables();
@@ -68,17 +68,17 @@ public class Model extends JPanel implements ActionListener {
     }
 
     private void loadImages() {
-        down = new ImageIcon("C:\\Users\\Mattikop\\Documents\\NetBeansProjects\\Pacmangame\\src\\images\\down.gif")
+        down = new ImageIcon("images\\down.gif")
                 .getImage();
-        up = new ImageIcon("C:\\Users\\Mattikop\\Documents\\NetBeansProjects\\Pacmangame\\src\\images\\up.gif")
+        up = new ImageIcon("images\\up.gif")
                 .getImage();
-        left = new ImageIcon("C:\\Users\\Mattikop\\Documents\\NetBeansProjects\\Pacmangame\\src\\images\\left.gif")
+        left = new ImageIcon("images\\left.gif")
                 .getImage();
-        right = new ImageIcon("C:\\Users\\Mattikop\\Documents\\NetBeansProjects\\Pacmangame\\src\\images\\right.gif")
+        right = new ImageIcon("images\\right.gif")
                 .getImage();
-        ghost = new ImageIcon("C:\\Users\\Mattikop\\Documents\\NetBeansProjects\\Pacmangame\\src\\images\\ghost.gif")
+        ghost = new ImageIcon("images\\ghost.gif")
                 .getImage();
-        heart = new ImageIcon("C:\\Users\\Mattikop\\Documents\\NetBeansProjects\\Pacmangame\\src\\images\\heart.png")
+        heart = new ImageIcon("images\\heart.png")
                 .getImage();
 
     }
